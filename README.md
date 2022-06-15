@@ -1,4 +1,4 @@
-# Rocketseat Ignite course - React Native Trail
+# Ignite course - React Native Trail
 
 Monorepo with my progress in the Ignite course. This repo contains the challenges and chapters projects.
 
