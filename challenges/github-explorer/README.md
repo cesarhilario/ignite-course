@@ -15,7 +15,11 @@
 
 ## 🏁 Demo
 
+<div style="max-width: 50%; margin: 0 auto;">
+
 ![Github Explorer demo](./demo/github-explorer-demo.gif)
+
+</div>
 
 <h2 id="technologies">
   🚀 Technologies
@@ -73,4 +77,4 @@ This project is under the MIT license. See the [LICENSE](https://github.com/cesa
 
 ---
 
-Made with ♥ by César Hilário :wave: [Get in touch!](https://www.linkedin.com/in/cesarhilario/)
+Made with ❤️ by César Hilário :wave: [Get in touch!](https://www.linkedin.com/in/cesarhilario/)
