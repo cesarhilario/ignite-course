@@ -4,9 +4,11 @@ Monorepo with my progress in the Ignite course. This repo contains the challenge
 
 ## Challanges
 
-- Save Pass - App that allow you save your password.
-- Stream Data - oAuth with Twitch
-- Todo - A simple todo app
+- Todo - A simple todo app.
+- Stream Data - oAuth with Twitch.
+- Save Pass - App that allow you save your passwords.
+- Github Explorer - App that gets information from a repository on github.
+  - [Readme](./challenges/github-explorer/README.md)
 
 ## Chapters projects
 
