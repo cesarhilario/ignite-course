@@ -15,8 +15,7 @@
 
 ## 🏁 Demo
 
-[Imgur](https://i.imgur.com/YrljTWX.gifv | width=500)
-
+<img src="https://i.imgur.com/YrljTWX.gif" alt="github explorer demo"/>
 
 <h2 id="technologies">
   🚀 Technologies
