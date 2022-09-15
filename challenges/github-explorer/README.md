@@ -15,11 +15,8 @@
 
 ## 🏁 Demo
 
-<div style="max-width: 50%; margin: 0 auto;">
+[Imgur](https://i.imgur.com/YrljTWX.gifv | width=500)
 
-![Github Explorer demo](./demo/github-explorer-demo.gif)
-
-</div>
 
 <h2 id="technologies">
   🚀 Technologies
