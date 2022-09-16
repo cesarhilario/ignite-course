@@ -32,6 +32,7 @@ export function SignIn() {
       Alert.alert("Erro SingIn", "Ocorreu um erro ao tentar logar no app.");
     }
   }
+
   return (
     <Container
       from={{

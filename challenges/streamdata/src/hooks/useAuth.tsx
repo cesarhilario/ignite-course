@@ -70,12 +70,15 @@ function AuthProvider({ children }: AuthProviderData) {
           throw new Error("Invalid state value");
         }
 
-        api.defaults.headers.authorization = `Bearer ${authResponse.params.access_token}`;
+        api.defaults.headers.common[
+          "Authorization"
+        ] = `Bearer ${authResponse.params.access_token}`;
         const userResponse = await api.get("/users");
         setUser(userResponse.data.data[0]);
         setUserToken(authResponse.params.access_token);
       }
     } catch (error) {
+      console.log(error);
       throw new Error("[useAuth()], An error occurred during the request!");
     } finally {
       setIsLoggingIn(false);
@@ -101,12 +104,13 @@ function AuthProvider({ children }: AuthProviderData) {
           "https://static-cdn.jtvnw.net/user-default-pictures-uv/cdd517fe-def4-11e9-948e-784f43822e80-profile_image-300x300.png",
       });
       setUserToken("");
-      delete api.defaults.headers.authorization;
+      delete api.defaults.headers.common["Authorization"];
       setIsLoggingOut(false);
     }
   }
 
   useEffect(() => {
+    // @ts-ignore
     api.defaults.headers["Client-Id"] = CLIENT_ID;
   }, []);
 

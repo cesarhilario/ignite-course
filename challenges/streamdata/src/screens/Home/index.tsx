@@ -152,6 +152,7 @@ export function Home() {
             {user.display_name}
           </UserInfoText>
         </UserInfo>
+
         <SignOutButton onPress={handleSignOut}>
           {isLoggingOut ? (
             <ActivityIndicator color={theme.colors.white} size={25} />
