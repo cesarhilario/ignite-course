@@ -41,6 +41,7 @@ This project was developed at the Rocketseat Ignite Bootcamp as a challenge, wit
   - [ ] username
 - [ ] Profiles
 - [ ] Delete passwords
+- [ ] Improve password search
 
 <h2 id="how-to-use">
   ℹ️ How to use
