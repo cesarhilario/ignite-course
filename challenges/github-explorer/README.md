@@ -15,8 +15,9 @@
 
 ## 🏁 Demo
 
-<img src="https://i.imgur.com/YrljTWX.gif" alt="github explorer demo"/>
+<!-- <img src="https://i.imgur.com/YrljTWX.gifv" data-canonical-src="https://i.imgur.com/YrljTWX.gifv" alt="github explorer demo" width="500px"/> -->
 
+<img src="https://github.com/cesarhilario/ignite-rn/blob/main/challenges/github-explorer/demo/github-explorer-demo.gif" width="250px"/>
 <h2 id="technologies">
   🚀 Technologies
 </h2>
@@ -38,9 +39,9 @@ This project was developed at the Rocketseat Ignite Bootcamp as a challenge, wit
 - [x] Fetch repository with Github API
 - [x] Dashboard screen with all fetched repositories
 - [x] Repository screens with informations about it, such as:
-  - Stars count
-  - Forks count
-  - Opened Issues
+  - [x] Stars count
+  - [x] Forks count
+  - [x] Opened Issues
 - [x] List recent issues and open in browser
 - [x] Animations with React Native Reanimated
 
