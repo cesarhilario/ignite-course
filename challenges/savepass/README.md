@@ -15,7 +15,7 @@
 
 ## 🏁 Demo
 
-<img src="https://github.com/cesarhilario/ignite-rn/blob/main/challenges/savepass/demo/savepass-demo.gif" width="250px"/>
+<img src="https://github.com/cesarhilario/ignite-react-native/blob/main/challenges/savepass/demo/savepass-demo.gif" width="250px"/>
 
 <h2 id="technologies">
   🚀 Technologies
@@ -55,9 +55,9 @@ To clone and run this application, you'll need:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/cesarhilario/ignite-rn.git
+$ git clone https://github.com/cesarhilario/ignite-react-native.git
 # Go into project
-$ cd ignite-rn/challenges/savepass
+$ cd ignite-react-native/challenges/savepass
 # Install dependencies
 $ yarn
 # Start expo service
@@ -68,7 +68,7 @@ $ expo start
   📝 License
 </h2>
 
-This project is under the MIT license. See the [LICENSE](https://github.com/cesarhilario/ignite-rn/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/cesarhilario/ignite-react-native/blob/main/LICENSE) for more information.
 
 ---
 

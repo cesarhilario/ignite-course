@@ -17,7 +17,7 @@
 
 <!-- <img src="https://i.imgur.com/YrljTWX.gifv" data-canonical-src="https://i.imgur.com/YrljTWX.gifv" alt="github explorer demo" width="500px"/> -->
 
-<img src="https://github.com/cesarhilario/ignite-rn/blob/main/challenges/github-explorer/demo/github-explorer-demo.gif" width="250px"/>
+<img src="https://github.com/cesarhilario/ignite-react-native/blob/main/challenges/github-explorer/demo/github-explorer-demo.gif" width="250px"/>
 <h2 id="technologies">
   🚀 Technologies
 </h2>
@@ -57,9 +57,9 @@ To clone and run this application, you'll need:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/cesarhilario/ignite-rn.git
+$ git clone https://github.com/cesarhilario/ignite-react-native.git
 # Go into project
-$ cd ignite-rn/challenges/github-explorer
+$ cd ignite-react-native/challenges/github-explorer
 # Install dependencies
 $ yarn
 # Start expo service
@@ -70,7 +70,7 @@ $ expo start
   📝 License
 </h2>
 
-This project is under the MIT license. See the [LICENSE](https://github.com/cesarhilario/ignite-rn/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/cesarhilario/ignite-react-native/blob/main/LICENSE) for more information.
 
 ---
 

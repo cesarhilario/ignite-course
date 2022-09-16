@@ -14,7 +14,7 @@
 
 ## 🏁 Demo
 
-<img src="https://github.com/cesarhilario/ignite-rn/blob/main/challenges/todo/demo/todo-app-demo.gif" width="250px"/>
+<img src="https://github.com/cesarhilario/ignite-react-native/blob/main/challenges/todo/demo/todo-app-demo.gif" width="250px"/>
 
 ### 🎨 Layout
 
@@ -42,9 +42,9 @@ To clone and run this application, you'll need:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/cesarhilario/ignite-rn.git
+$ git clone https://github.com/cesarhilario/ignite-react-native.git
 # Go into project
-$ cd ignite-rn/challenges/todo
+$ cd ignite-react-native/challenges/todo
 # Install dependencies
 $ yarn
 # Install iOS dependencies
@@ -59,7 +59,7 @@ $ yarn android
   📝 License
 </h2>
 
-This project is under the MIT license. See the [LICENSE](https://github.com/cesarhilario/ignite-rn/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/cesarhilario/ignite-react-native/blob/main/LICENSE) for more information.
 
 ---
 
