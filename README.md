@@ -19,7 +19,7 @@
 - <span> oAuth with Twitch </span>
   - [Readme](./challenges/streamdata/README.md)
 
-### 🔑 Save Pass
+### 🔑 SavePass
 
 - <span>App that allow you save your passwords.</span>
   - [Readme](./challenges/savepass/README.md)
