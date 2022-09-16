@@ -30,9 +30,8 @@ export function Home() {
 
   async function loadData() {
     const dataKey = "@savepass:logins";
-    const logins: LoginListDataProps = JSON.parse(
-      await AsyncStorage.getItem(dataKey)
-    );
+    const items = await AsyncStorage.getItem(dataKey);
+    const logins: LoginListDataProps = JSON.parse(items ? items : "{}");
 
     if (logins?.length > 0) {
       setData(logins);
@@ -65,8 +64,8 @@ export function Home() {
     <>
       <Header
         user={{
-          name: "Rocketseat",
-          avatar_url: "https://i.ibb.co/ZmFHZDM/rocketseat.jpg",
+          name: "César",
+          avatar_url: "https://avatars.githubusercontent.com/u/30195462?v=4",
         }}
       />
       <Container>

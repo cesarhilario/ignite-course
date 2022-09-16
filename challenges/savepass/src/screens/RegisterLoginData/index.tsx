@@ -15,9 +15,9 @@ import { Button } from "../../components/Form/Button";
 import { Container, Form } from "./styles";
 
 interface FormData {
-  service_name: string;
-  email: string;
-  password: string;
+  service_name?: string;
+  email?: string;
+  password?: string;
 }
 
 const schema = Yup.object().shape({
@@ -44,12 +44,12 @@ export function RegisterLoginData() {
       ...formData,
     };
     const dataKey = "@savepass:logins";
-    const logins = JSON.parse(await AsyncStorage.getItem(dataKey));
+    const logins = JSON.parse((await AsyncStorage.getItem(dataKey)) || "{}");
     const data =
       logins?.length > 0 ? [...logins, newLoginData] : [newLoginData];
 
     await AsyncStorage.setItem(dataKey, JSON.stringify(data));
-    navigate("Home");
+    navigate("Home" as never);
   }
 
   return (
@@ -65,7 +65,7 @@ export function RegisterLoginData() {
             testID="service-name-input"
             title="Nome do serviço"
             name="service_name"
-            error={errors.service_name && errors.service_name.message}
+            error={errors?.service_name && errors?.service_name.message}
             control={control}
             autoCapitalize="sentences"
             autoCorrect
