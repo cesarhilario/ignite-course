@@ -6,6 +6,7 @@
 
 <p>Monorepo with my progress in the React Native Trail at Ignite bootcamp. This repo contains the challenges and chapters projects.
 </p>
+
 ## Challenges
 
 ### ☑️ Todo
