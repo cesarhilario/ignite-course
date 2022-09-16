@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   View,
   Text,
@@ -9,9 +9,9 @@ import {
   FlatList,
 } from 'react-native';
 
-import {Button} from '../components/Button';
-import {Modal} from '../components/Modal';
-import {SkillCard} from '../components/SkillCard';
+import { Button } from '../components/Button';
+import { Modal } from '../components/Modal';
+import { SkillCard } from '../components/SkillCard';
 
 interface ISkillData {
   id: string;
@@ -83,11 +83,11 @@ export function Home() {
         onChangeText={setNewSkill}
       />
       <Button title="Add" onPress={handleAddNewSkill} />
-      <Text style={[styles.title, {marginVertical: 50}]}>My Skills</Text>
+      <Text style={[styles.title, { marginVertical: 50 }]}>My Skills</Text>
       <FlatList
         data={mySkills}
         keyExtractor={item => item.id}
-        renderItem={({item}) => (
+        renderItem={({ item }) => (
           <SkillCard
             onPress={() => handleRemoveSkill(item.id)}
             skill={item.name}
