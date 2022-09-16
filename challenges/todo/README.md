@@ -18,7 +18,7 @@
 
 ### 🎨 Layout
 
-[Click here to open Figma](<https://www.figma.com/file/vcLNfif8Kj1lPqvt49bmrF/to.do-(Copy)?node-id=10485%3A499>)
+[Click here to open Figma](https://www.figma.com/file/vcLNfif8Kj1lPqvt49bmrF/to.do?node-id=1%3A206)
 
 <h2 id="technologies">
   🚀 Technologies
