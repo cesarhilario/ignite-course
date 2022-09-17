@@ -4,8 +4,7 @@
 
 #### Description
 
-<p>Monorepo with my progress in the React Native Trail at Ignite bootcamp. This repo contains the challenges and chapters projects.
-</p>
+<p>Monorepo with my progress in the React Native Trail at Ignite bootcamp. This repo contains the challenges and chapters projects.</p>
 
 ## Challenges
 
@@ -31,5 +30,17 @@
 
 ## Chapter projects
 
-- Go Finacnes: Financial management app
-- RentX (doing): Car rent app
+### 🦊 My Skills
+
+- <span>A basic app to record your skills</span>
+  - [Readme](./chapters/myskills/README.md)
+
+### Go Finances
+
+- <app>Financial management app</app>
+  - [Readme](./chapters/gofinances/README.md)
+
+### RentX
+
+- <span>Car rent app</span>
+  - **Status**: doing
