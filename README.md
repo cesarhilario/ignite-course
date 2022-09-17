@@ -35,12 +35,12 @@
 - <span>A basic app to record your skills</span>
   - [Readme](./chapters/myskills/README.md)
 
-### Go Finances
+### 🏦 Go Finances
 
 - <app>Financial management app</app>
   - [Readme](./chapters/gofinances/README.md)
 
-### RentX
+### 🚗 RentX
 
 - <span>Car rent app</span>
   - **Status**: doing
