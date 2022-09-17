@@ -39,6 +39,7 @@ To clone and run this application, you'll need:
 1. Git
 2. Node.js
 3. Yarn
+4. Configured Android or iOS emulator
 
 ```bash
 # Clone this repository
