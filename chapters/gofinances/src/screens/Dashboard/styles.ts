@@ -7,7 +7,7 @@ import { getStatusBarHeight, getBottomSpace } from 'react-native-iphone-x-helper
 
 import { IDataListProps } from '.';
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.View`
   flex: 1;
   background-color: ${({ theme }) => theme.colors.background};
 `;

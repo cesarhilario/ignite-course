@@ -31,7 +31,7 @@ const schema = yup.object().shape({
     .required('O valor é obrigatório'),
 });
 
-export function Register() {
+export function Register(): JSX.Element {
   const [transactionType, setTransactionType] = useState('');
   const [categoryModalOpen, setCateogoryModalOpen] = useState(false);
   const [category, setCategory] = useState({
@@ -70,7 +70,7 @@ export function Register() {
     setCateogoryModalOpen(false);
   }
 
-  async function handleRegister(form: IFormData) {
+  async function handleRegister(form: Partial<IFormData>) {
     if (!transactionType) {
       Alert.alert('Selectione o tipo da transação.');
       return;

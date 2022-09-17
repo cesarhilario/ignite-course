@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextInputProps } from 'react-native';
-import { Control, Controller } from 'react-hook-form';
+import { Control, Controller, FieldError, FieldErrorsImpl, Merge } from 'react-hook-form';
 
 import { Input } from '../Input';
 
@@ -9,7 +9,7 @@ import { Container, Error } from './styles';
 interface IProps extends TextInputProps {
   control: Control;
   name: string;
-  error: string;
+  error?: string | FieldError | Merge<FieldError, FieldErrorsImpl<any>>;
 }
 
 export function InputForm({ control, name, error, ...rest }: IProps) {

@@ -151,7 +151,7 @@ export function Summary() {
                   labels: {
                     fontSize: RFValue(18),
                     fill: theme.colors.shape,
-                    fontFamily: theme.fonts.bold,
+                    // fontFamily: theme.fonts.bold,
                   },
                 }}
                 labelRadius={50}
