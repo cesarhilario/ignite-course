@@ -42,5 +42,5 @@
 
 ### 🚗 RentX
 
-- <span>Car rent app</span>
+- <span>Rent car app</span>
   - **Status**: doing
