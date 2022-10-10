@@ -3,10 +3,11 @@ import { TextInputProps } from 'react-native';
 
 import { Container } from './styles';
 
-type TProps = TextInputProps & {
+export interface Props extends TextInputProps {
   placeholderTextColor?: string;
-};
+  active?: boolean;
+}
 
-export function Input({ ...rest }: TProps) {
-  return <Container {...rest} />;
+export function Input({ active = false, ...rest }: Props) {
+  return <Container active={active} {...rest} />;
 }
