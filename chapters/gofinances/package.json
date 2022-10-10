@@ -6,7 +6,8 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "start": "react-native start"
+    "start": "react-native start",
+    "test": "jest"
   },
   "dependencies": {
     "@expo-google-fonts/poppins": "^0.2.2",
@@ -48,6 +49,7 @@
     "@babel/core": "^7.12.9",
     "@testing-library/jest-native": "^5.0.0",
     "@testing-library/react-native": "^11.2.0",
+    "@types/jest": "^29.1.2",
     "@types/react": "^18.0.20",
     "@types/react-native": "^0.70.1",
     "@types/styled-components-react-native": "^5.1.3",
