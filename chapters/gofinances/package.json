@@ -46,11 +46,20 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@testing-library/jest-native": "^5.0.0",
+    "@testing-library/react-native": "^11.2.0",
     "@types/react": "^18.0.20",
     "@types/react-native": "^0.70.1",
     "@types/styled-components-react-native": "^5.1.3",
+    "jest-expo": "^46.0.1",
     "react-native-svg-transformer": "^1.0.0",
     "typescript": "~4.3.5"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "setupFileAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
   },
   "private": true
 }
