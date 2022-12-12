@@ -2,9 +2,7 @@ import React, { createContext, ReactNode, useContext, useEffect, useState } from
 import * as AuthSession from 'expo-auth-session';
 import * as AppleAuthentication from 'expo-apple-authentication';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { ActivityIndicator } from 'react-native';
-import { useTheme } from 'styled-components';
-import { AppRoutes } from '../routes/app.routes';
+import { useTheme } from 'styled-components/native';
 
 interface IAuthProviderProps {
   children: ReactNode;

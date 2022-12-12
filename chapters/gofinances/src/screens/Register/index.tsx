@@ -104,8 +104,8 @@ export function Register(): JSX.Element {
 
       navigation.navigate('Listing');
     } catch (error) {
-      throw new Error(error as string);
       Alert.alert('Erro!', 'Não foi possível salvar.');
+      throw new Error(error as string);
     }
   }
 
@@ -151,13 +151,17 @@ export function Register(): JSX.Element {
               />
             </TransactionsTypes>
 
-            <CategorySelectButton title={category.name} onPress={handleOpenSelectCategoryModal} />
+            <CategorySelectButton
+              testID="button-category"
+              title={category.name}
+              onPress={handleOpenSelectCategoryModal}
+            />
           </Fields>
 
           <Button title="Enviar" onPress={handleSubmit(handleRegister)} />
         </Form>
 
-        <Modal visible={categoryModalOpen}>
+        <Modal testID="modal-category" visible={categoryModalOpen}>
           <CategorySelect
             category={category}
             setCategory={setCategory}

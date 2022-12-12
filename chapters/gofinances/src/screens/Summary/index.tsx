@@ -7,7 +7,7 @@ import { VictoryPie } from 'victory-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { useBottomTabBarHeight } from '@react-navigation/bottom-tabs';
 import { useFocusEffect } from '@react-navigation/native';
-import { useTheme } from 'styled-components';
+import { useTheme } from 'styled-components/native';
 import { useAuth } from '../../hooks/auth';
 
 import { categories } from '../../utils/categories';

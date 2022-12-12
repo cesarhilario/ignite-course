@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ActivityIndicator, Alert, Platform } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
-import { useTheme } from 'styled-components';
+import { useTheme } from 'styled-components/native';
 
 import { SignInSocialButton } from '../../components/SignInSocialButton';
 import AppleSvg from '../../assets/apple.svg';
