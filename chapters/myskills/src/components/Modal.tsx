@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {View} from 'react-native';
+import React, { useState } from 'react';
+import { View } from 'react-native';
 import Dialog from 'react-native-dialog';
 
 interface IModal {
@@ -26,7 +26,7 @@ export function Modal({
         <Dialog.Description>{description}</Dialog.Description>
         <Dialog.Input onChangeText={setText} />
         <Dialog.Button label="Cancel" onPress={handleCancel} />
-        <Dialog.Button label="Sumbit" onPress={() => handleSubmit(text)} />
+        <Dialog.Button label="Submit" onPress={() => handleSubmit(text)} />
       </Dialog.Container>
     </View>
   );

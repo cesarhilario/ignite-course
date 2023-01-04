@@ -10,7 +10,7 @@ interface ISkillCardProps extends TouchableOpacityProps {
   skill: string;
 }
 
-export function SkillCard({skill, ...rest}: ISkillCardProps) {
+export function SkillCard({ skill, ...rest }: ISkillCardProps) {
   return (
     <TouchableOpacity style={styles.buttonSkill} {...rest}>
       <Text style={styles.textSkill}>{skill}</Text>
