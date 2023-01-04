@@ -7,6 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
+    "test:build": "detox build -c android.emu.debug && % detox build -c ios.sim.debug",
+    "test:android": "detox test -c android.emu.debug",
+    "test:ios": "detox test -c ios.sim.debug",
     "lint": "eslint ."
   },
   "dependencies": {
