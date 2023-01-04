@@ -24,9 +24,13 @@ export function Modal({
       <Dialog.Container visible={visible}>
         <Dialog.Title>{title}</Dialog.Title>
         <Dialog.Description>{description}</Dialog.Description>
-        <Dialog.Input onChangeText={setText} />
+        <Dialog.Input testID="modal-name-input" onChangeText={setText} />
         <Dialog.Button label="Cancel" onPress={handleCancel} />
-        <Dialog.Button label="Submit" onPress={() => handleSubmit(text)} />
+        <Dialog.Button
+          testID="modal-name-submit"
+          label="Submit"
+          onPress={() => handleSubmit(text)}
+        />
       </Dialog.Container>
     </View>
   );

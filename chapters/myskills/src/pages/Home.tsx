@@ -73,7 +73,9 @@ export function Home() {
         handleCancel={handleCancel}
         handleSubmit={handleSubmit}
       />
-      <Text style={styles.title}>Welcome, {name}</Text>
+      <Text testID="welcome" style={styles.title}>
+        Welcome, {name}
+      </Text>
       <Text style={styles.greetings}>{greeting}</Text>
       <TextInput
         style={styles.input}
