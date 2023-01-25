@@ -3,14 +3,18 @@ import React, { memo } from "react";
 
 interface FriendProps {
   data: {
-    id: number;
+    id: string;
     name: string;
     likes: number;
+    online: string;
   };
   unFollow: () => void;
 }
 
-function FriendComponent({ data: { likes, name }, unFollow }: FriendProps) {
+function FriendComponent({
+  data: { likes, name, online },
+  unFollow,
+}: FriendProps) {
   return (
     <View style={{ marginBottom: 10 }}>
       <Text>
@@ -19,6 +23,11 @@ function FriendComponent({ data: { likes, name }, unFollow }: FriendProps) {
       <TouchableOpacity onPress={unFollow}>
         <Text>Deixar de seguir</Text>
       </TouchableOpacity>
+      <Text>
+        Online em: {online}
+        {/* // ! DON'T DO THIS (calculations here`)*/}
+        {/* {new Date().getHours()}:{new Date().getMinutes()} */}
+      </Text>
     </View>
   );
 }

@@ -4,9 +4,10 @@ import { Friend } from "./Friend";
 
 interface FriendListProps {
   data: {
-    id: number;
+    id: string;
     name: string;
     likes: number;
+    online: string;
   }[];
   unFollow: () => void;
 }

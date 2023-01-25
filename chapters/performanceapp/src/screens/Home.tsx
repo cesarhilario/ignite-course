@@ -10,6 +10,13 @@ import {
 
 import { FriendList } from "../components/FriendList";
 
+interface Data {
+  id: string;
+  name: string;
+  likes: number;
+  online: string;
+}
+
 export const Home = () => {
   const [name, setName] = useState("");
   const [friends, setFriends] = useState([]);
@@ -17,7 +24,15 @@ export const Home = () => {
   async function handleSearch() {
     const response = await fetch(`http://127.0.0.1:3333/friends?q=${name}`);
     const data = await response.json();
-    setFriends(data);
+
+    const formattedData = data.map((item: Data) => ({
+      id: item.id,
+      name: item.name,
+      likes: item.likes,
+      online: `${new Date().getHours()}:${new Date().getMinutes()}`,
+    }));
+
+    setFriends(formattedData);
   }
 
   const handleUnFollow = useCallback(() => {
