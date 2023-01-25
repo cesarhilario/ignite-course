@@ -25,7 +25,7 @@ function FriendComponent({
       </TouchableOpacity>
       <Text>
         Online em: {online}
-        {/* // ! DON'T DO THIS (calculations here`)*/}
+        {/* // ! DON'T DO THIS (calculations here) */}
         {/* {new Date().getHours()}:{new Date().getMinutes()} */}
       </Text>
     </View>
