@@ -51,10 +51,10 @@ export const Home = () => {
 
       <Button title="Buscar" onPress={handleSearch} />
 
-      <ScrollView style={styles.list}>
-        {/* // ! Don't do this. This was made to see the profile at react-devtools */}
+      {/* <ScrollView style={styles.list}>
+        {/* // ! Don't do this. This was made to see the profile at react-devtools *
         <FriendList data={friends} unFollow={handleUnFollow} />
-      </ScrollView>
+      </ScrollView> */}
     </View>
   );
 };
