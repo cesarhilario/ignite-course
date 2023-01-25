@@ -8,9 +8,10 @@ interface FriendListProps {
     name: string;
     likes: number;
   }[];
+  unFollow: () => void;
 }
 
-export function FriendList({ data }: FriendListProps) {
+export function FriendList({ data, unFollow }: FriendListProps) {
   const totalLikes = useMemo(() => {
     return data.reduce((likes, friend) => {
       return likes + friend.likes;
@@ -21,7 +22,7 @@ export function FriendList({ data }: FriendListProps) {
     <View>
       <Text>Total de Likes: {totalLikes}</Text>
       {data.map((friend) => (
-        <Friend key={friend.id} data={friend} />
+        <Friend unFollow={unFollow} key={friend.id} data={friend} />
       ))}
     </View>
   );

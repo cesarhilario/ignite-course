@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import {
   View,
   Text,
@@ -20,6 +20,10 @@ export const Home = () => {
     setFriends(data);
   }
 
+  const handleUnFollow = useCallback(() => {
+    console.log("Deixou de seguir");
+  }, []);
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Amigos</Text>
@@ -34,7 +38,7 @@ export const Home = () => {
 
       <ScrollView style={styles.list}>
         {/* // ! Don't do this. This was made to see the profile at react-devtools */}
-        <FriendList data={friends} />
+        <FriendList data={friends} unFollow={handleUnFollow} />
       </ScrollView>
     </View>
   );

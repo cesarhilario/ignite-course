@@ -1,4 +1,4 @@
-import { Text } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 import React, { memo } from "react";
 
 interface FriendProps {
@@ -7,13 +7,19 @@ interface FriendProps {
     name: string;
     likes: number;
   };
+  unFollow: () => void;
 }
 
-function FriendComponent({ data: { likes, name } }: FriendProps) {
+function FriendComponent({ data: { likes, name }, unFollow }: FriendProps) {
   return (
-    <Text>
-      {name} - Likes {likes}
-    </Text>
+    <View style={{ marginBottom: 10 }}>
+      <Text>
+        {name} - Likes {likes}
+      </Text>
+      <TouchableOpacity onPress={unFollow}>
+        <Text>Deixar de seguir</Text>
+      </TouchableOpacity>
+    </View>
   );
 }
 
