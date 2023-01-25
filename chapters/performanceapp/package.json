@@ -5,6 +5,7 @@
   "scripts": {
     "start": "expo start",
     "start:server": " yarn json-server -d 750 -w -H 127.0.0.1 -p 3333 ./src/api/server.js",
+    "bundle-size": "yarn run react-native-bundle-visualizer",
     "debug": "react-devtools",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -24,6 +25,7 @@
     "@faker-js/faker": "^7.6.0",
     "@types/react": "~18.0.14",
     "@types/react-native": "~0.70.6",
+    "react-native-bundle-visualizer": "^3.1.2",
     "typescript": "^4.6.3"
   },
   "private": true
