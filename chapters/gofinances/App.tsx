@@ -21,7 +21,6 @@ export default function App() {
   if (!fontsLoaded || userStorageLoading) {
     return <AppLoading />;
   }
-
   return (
     <ThemeProvider theme={theme}>
       <StatusBar barStyle="light-content" />
